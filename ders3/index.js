@@ -6,7 +6,7 @@ const server=express();
 
 server.get('/',(req,res)=>{
     res.send("tek başıma ilk deneme , NODEMON DENEMESİ");
-    // res.send("nodemon paketi değişikliği kaydediyor mu diye bakılıyor"); ÖĞRENİLEN RES.SEND(), RES.JSON,RES.END GİBİ KOMUTLAR SADECE BİR KERE YANIT DÖNDÜREBİLİR:
+    // res.send("nodemon paketi değişikliği kaydediyor mu diye bakılıyor"); ÖĞRENİLEN: RES.SEND(), RES.JSON,RES.END GİBİ KOMUTLAR SADECE BİR KERE YANIT DÖNDÜREBİLİR:
     // ERR-HTTP-HEADERS-SENT: hatası, Node.js ve Express.js gibi sunucu taraflı uygulamalarda, bir HTTP isteği için istemciye zaten bir yanıt (response) gönderildikten sonra tekrar yanıt göndermeye veya başlıkları (headers) değiştirmeye çalıştığınızda ortaya çıkan yaygın bir programlama hatasıdır.
 
     
@@ -28,5 +28,6 @@ server.listen(5000,()=>{
 
 //  "scripts": {
 //   "start":"node index.js", EKLEDİK
+// "server":"nodemon index.js", ekledik
 
-// sonra terminalde (npm install -D nodemon)(burdaki büyük D sadece uygualmayı geliştirme aşamasında kullanacağımızı söylüyoruz) SONRA TERMİNALDEN DEVAMLI DEĞİŞİKLİĞİ KAYDEDİNCE BİR KERE ÇALIŞTIRMAK İÇİN npx nodemon index.js yazılır ve bunu da package.json a da ekleyecez ve artık terminalde npm run server yazıp çalışabilecaz
+// sonra terminalde (npm install -D nodemon  PAKETİMİZİ YÜKLÜYORUZ)(burdaki büyük D sadece uygualmayı geliştirme aşamasında kullanacağımızı söylüyoruz) SONRA TERMİNALDEN DEVAMLI DEĞİŞİKLİĞİ KAYDEDİNCE BİR KERE ÇALIŞTIRMAK İÇİN npx nodemon index.js yazılır ve bunu da package.json a da ekleyecez ve artık terminalde npm run server yazıp çalışabilecaz

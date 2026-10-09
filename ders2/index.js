@@ -13,7 +13,7 @@ server.get("/aktorler",(req,res)=>{
 res.status(200).json(data); // cevap olarak başarılı ve data js değerini yollattık
 });
 
-server.get("/aktorler/:id",(req,res)=>{ // aktörlerden sonra kullanıcı hangi id yi girerse req istek verisini içersinde bize gelecek (:id kısmı aktore-id olsaydo params ın yanına params.aktore-id yazaxaktık)
+server.get("/aktorler/:id",(req,res)=>{ // aktörlerden sonra kullanıcı hangi id yi girerse req istek verisini içersinde bize gelecek ; (:id kısmı aktore-id olsaydo params ın yanına params.aktore-id yazaxaktık)
     // req.params.id (params= isteklerin dinamik olarak gönderilen değişkenleri yakalamayı sağlar )
 
     const {id}=req.params;

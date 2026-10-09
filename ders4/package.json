@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "start":"node index.js",
+    "server":"nodemon index.js",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
