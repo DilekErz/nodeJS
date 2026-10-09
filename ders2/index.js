@@ -14,10 +14,10 @@ res.status(200).json(data); // cevap olarak başarılı ve data js değerini yol
 });
 
 server.get("/aktorler/:id",(req,res)=>{ // aktörlerden sonra kullanıcı hangi id yi girerse req istek verisini içersinde bize gelecek (:id kısmı aktore-id olsaydo params ın yanına params.aktore-id yazaxaktık)
-    // req.params.id
+    // req.params.id (params= isteklerin dinamik olarak gönderilen değişkenleri yakalamayı sağlar )
 
     const {id}=req.params;
-    const aktor=data.find((aktor)=>aktor.id===parseInt(id))
+    const aktor=data.find((aktor)=>aktor.id===parseInt(id)) //id ler rakam ama string olarak geleceği için parseInt ile çeviriyoruz.
 
     // aktörlerle işleşen bir id varda ,döndürülecek
     if(aktor){
