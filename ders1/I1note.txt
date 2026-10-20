@@ -12,4 +12,4 @@ Client error responses (400 – 499)
 Server error responses (500 – 599)
 
 
-package.json da scriot in altında start komunu verdiğimzide yani normalden konsolda node I1.js diyorduk , artık terminalde başlatmak için npm start komutunu çalıştırır
+package.json da script in altında start komunu verdiğimzide yani normalden konsolda node I1.js diyorduk , artık terminalde başlatmak için npm start komutunu çalıştırır

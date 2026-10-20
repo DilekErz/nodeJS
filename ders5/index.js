@@ -10,7 +10,7 @@ const oyuncularRouter=require("./routers/oyuncularRouter");
 const server=express();
 
 server.use(express.json());
-server.use("/oyuncular",oyuncularRouter); //oyuncular adresine gelen herşeye oyuncularRouterdan cevap ver demek oluyor bu
+server.use("/oyuncular",oyuncularRouter); //   /oyuncular adresine gelen herşeye oyuncularRouterdan cevap ver demek oluyor bu
 
 server.get("/",(req,res)=>{
     res.send("modul5");
@@ -21,7 +21,8 @@ server.get("/",(req,res)=>{
 // });
 
 //  //EKLEME YAPACAz:
-// //elimizde 3 tane data var yani veri var data.js dosyamızda biz elimizle diğer verinin id sini verebiliriz ama veritabanından almak isteidğimizde otomatik zaten geliyor bunu yazmamıza gerek yok
+// //elimizde 3 tane data var yani veri var data.js dosyamızda biz elimizle diğer verinin id sini verebiliriz ama veritabanından almak isteidğimizde otomatik zaten geliyor bunu yazmamıza gerek yok şimdilik let next_id=4 verdik
+
 // let next_id=4;
 // server.post("/oyuncular",(req,res)=>{ 
 //     //getteki adres uzantısı aklımızı karıştırmasın burdaki post metodu adresine cevap verirken diğeri get e cevap veriyor

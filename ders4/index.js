@@ -2,7 +2,7 @@ const express=require('express');
 const data =require("./data.js");
 const server=express();
 
-server.use(espress.json()); //bütün gelen isteklerde bu komutun kullanmasını istiyoruz,gelen espress json verimizi parse (ayrıştıran) ediyor json verierini okuyabilmek için miiddleware aktif ediyoruz
+server.use(express.json()); //bütün gelen isteklerde bu komutun kullanmasını istiyoruz,gelen espress json verimizi parse (ayrıştıran) ediyor json verierini okuyabilmek için miiddleware aktif ediyoruz
 
 server.get("/",(req,res)=>{
     res.send("dördüncü modülden merhaba , nodemon tekrar deneme");
